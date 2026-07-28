@@ -36,7 +36,7 @@ Enigma I. Configuration dated 1940-01-13. References per ISO 690, dates per ISO 
 
 ## Verification
 
-`npm test` , 580,472 cases across 10 parts.
+`npm test` runs 1,635,032 cases across 10 parts.
 
 | Part | Cases |
 |---|---|
@@ -47,7 +47,7 @@ Enigma I. Configuration dated 1940-01-13. References per ISO 690, dates per ISO 
 | keyboard | 111 |
 | lampboard | 702 |
 | battery | 131 |
-| stepping mechanism | 18,235 |
+| stepping mechanism | 1,072,795 |
 | instruction plate | 54 |
 | assembled machine | 462,694 |
 
