@@ -1,0 +1,21 @@
+{
+  "name": "enigma-i",
+  "version": "1.0.0",
+  "description": "Enigma I (Chiffriermaschine), configuration dated 1940-01-13",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/machine.js",
+    "./wiring": "./src/wiring.js"
+  },
+  "files": [
+    "src",
+    "SOURCES.md"
+  ],
+  "scripts": {
+    "test": "node test/verify.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: Enigma I
+message: >-
+  Rotor wirings, notch and turnover positions are historical
+  fact and are cited in SOURCES.md. This entry cites the
+  implementation only.
+type: software
+authors:
+  - given-names: Dhruv
+    family-names: Gondaliya
+repository-code: https://github.com/Dhruv-Gondaliya/enigma-i
+license: MIT
+version: 1.0.0
+date-released: 2026-07-28
+keywords:
+  - Enigma
+  - cipher
+  - cryptography
+  - historical reconstruction
