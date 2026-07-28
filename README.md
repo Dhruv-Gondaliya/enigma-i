@@ -68,16 +68,6 @@ machine.pressKey('E');
 
 Those are the Operation Barbarossa settings of 7 July 1941; the first ciphertext letter `E` returns `A`, opening `AUFKLXABTEILUNG`. `pressKey` returns the lamp that lights and advances the rotors. There is no `decipher`: the machine is reciprocal, so deciphering is enciphering the ciphertext on identical settings.
 
-## Absent by decision
-
-| | |
-|---|---|
-| Comments | Any comment would be authorial prose or unverified German. See SOURCES.md. |
-| `decipher` | Would model hardware that does not exist. |
-| Self-encipherment check | Follows from the reflector. Verified, never enforced. |
-| Validation of settings | Wrong settings are silent and produce wrong output, as the machine did. |
-| `procedure.js` | H.Dv.g. 14 text unverified. Implementing it would mean inventing. |
-
 ## Structure
 
 ```
