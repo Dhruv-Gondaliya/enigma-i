@@ -1,8 +1,8 @@
 # Enigma I
 
-Rotor cipher machine, *Chiffriermaschine*, Wehrmacht service model. Configuration dated 1940-01-13.
+Rotor cipher machine, *Chiffriermaschine*, Army and Air Force service model. Configuration dated 1940-01-13.
 
-![verify](https://github.com/Dhruv-Gondaliya/enigma-i/actions/workflows/verify.yml/badge.svg)
+[![verify](https://github.com/Dhruv-Gondaliya/enigma-i/actions/workflows/verify.yml/badge.svg)](https://github.com/Dhruv-Gondaliya/enigma-i/actions/workflows/verify.yml)
 
 ```
 npm test
@@ -39,15 +39,13 @@ Full register in [SOURCES.md](SOURCES.md).
 
 ## Intercepted messages
 
-Decrypted from ciphertext using the published wartime settings.
+Decrypted from ciphertext using the published settings.
 
 | Message | Settings | Opens |
 |---|---|---|
 | Enigma Instruction Manual, 1930 | UKW-A, II I III, rings 24 13 22 | FEINDLIQEINFANTERIEKOLONNEBEOBAQTET |
 | Operation Barbarossa, 7 July 1941, part 1 | UKW-B, II IV V, rings 02 21 12 | AUFKLXABTEILUNGXVONXKURTINOWA |
 | Operation Barbarossa, 7 July 1941, part 2 | as part 1, key LSD | DREIGEHTLANGSAMABERSIQERVORWAERTS |
-
-X marks a space and Q stands for CH, both standard operator practice.
 
 ## Usage
 
@@ -66,17 +64,16 @@ machine.switchOn();
 machine.pressKey('E');
 ```
 
-Those are the Operation Barbarossa settings of 7 July 1941; the first ciphertext letter `E` returns `A`, opening `AUFKLXABTEILUNG`. `pressKey` returns the lamp that lights and advances the rotors. There is no `decipher`: the machine is reciprocal, so deciphering is enciphering the ciphertext on identical settings.
-
 ## Structure
 
 ```
 src/wiring.js     transcribed constants, each carrying its source
 src/machine.js    Rotor, Reflector, EntryWheel, Plugboard, Keyboard,
                   Lampboard, Battery, Pawl, Stepping, EnigmaI
-test/verify.js    1,635,032 cases across 10 parts; verify() is pure,
+test/verify.js    verify() is pure,
                   report() is the only host-dependent function
-SOURCES.md        hierarchy, configuration, unverified items, deviations
+SOURCES.md        hierarchy, configuration, verification,
+                  intercepted messages, vectors, test inputs
 ```
 
 ## Licence

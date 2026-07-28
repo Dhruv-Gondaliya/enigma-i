@@ -5,19 +5,19 @@ export const CONTACTS = 26;
 export const SOURCES = Object.freeze({
   ARTIFACT: Object.freeze({
     siglum: 'ARTIFACT',
-    title: 'Enigma I: lid instruction plate, keyboard, lamp panel, Steckerbrett',
+    title: 'Chiffriermaschine',
     kind: 'artifact'
   }),
   HDVG13: Object.freeze({
     siglum: 'H.Dv.g. 13',
-    title: 'Gebrauchsanleitung fuer die Chiffriermaschine Enigma',
+    title: 'Gebrauchsanleitung für die Chiffriermaschine Enigma',
     designators: 'H.Dv.g. 13, L.Dv.g. 13',
     date: '1937-01-12',
     kind: 'primary'
   }),
   HDVG14: Object.freeze({
     siglum: 'H.Dv.g. 14',
-    title: 'Schluesselanleitung zur Schluesselmaschine Enigma',
+    title: 'Schlüsselanleitung zur Schlüsselmaschine Enigma',
     designators: 'H.Dv.g. 14, M.Dv.Nr. 168, L.Dv.g. 14',
     place: 'Berlin',
     publisher: 'Reichsdruckerei',
@@ -50,7 +50,6 @@ export const SOURCES = Object.freeze({
     title: 'Enigma/Sample Messages',
     publisher: 'Franklin Heath Ltd Wiki',
     url: 'http://wiki.franklinheath.co.uk/index.php/Enigma/Sample_Messages',
-    note: '1930 message discovered by Ralph Erskine, published by Frode Weierud. Barbarossa messages published by Geoff Sullivan and Frode Weierud.',
     kind: 'reference'
   }),
   CONSENSUS: Object.freeze({

@@ -2,8 +2,14 @@
   "name": "enigma-i",
   "version": "1.0.0",
   "description": "Enigma I (Chiffriermaschine), configuration dated 1940-01-13",
+  "private": true,
   "type": "module",
   "license": "MIT",
+  "author": "Dhruv Gondaliya",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dhruv-Gondaliya/enigma-i.git"
+  },
   "exports": {
     ".": "./src/machine.js",
     "./wiring": "./src/wiring.js"

@@ -1,6 +1,6 @@
 # Sources
 
-Enigma I. Configuration dated 1940-01-13. References per ISO 690, dates per ISO 8601.
+Enigma I. Configuration dated 1940-01-13.
 
 ## Hierarchy
 
@@ -18,7 +18,7 @@ Enigma I. Configuration dated 1940-01-13. References per ISO 690, dates per ISO 
 | WHATWG | standard | WHATWG. *Console Standard*. |
 | OpenJS | implementation | OpenJS Foundation. *Node.js API documentation*. |
 | GitHub | platform | GitHub, Inc. *GitHub Docs*. https://docs.github.com |
-| SPDX | standard | SPDX License List. ISO/IEC 5962:2021. |
+| SPDX | standard | SPDX License List. |
 
 ## Configuration
 
@@ -36,7 +36,7 @@ Enigma I. Configuration dated 1940-01-13. References per ISO 690, dates per ISO 
 
 ## Verification
 
-`npm test` runs 1,635,032 cases across 10 parts.
+`npm test`
 
 | Part | Cases |
 |---|---|
@@ -58,6 +58,15 @@ Enigma I. Configuration dated 1940-01-13. References per ISO 690, dates per ISO 
 | Enigma Instruction Manual, 1930 | UKW-A, II I III, rings 24 13 22, plugs AM FI NV PS TU WZ, key ABL | Discovered by Ralph Erskine, published by Frode Weierud |
 | Operation Barbarossa, 7 July 1941, part 1 | UKW-B, II IV V, rings 02 21 12, plugs AV BS CG DL FU HZ IN KM OW RX, key BLA | Published by Geoff Sullivan and Frode Weierud |
 | Operation Barbarossa, 7 July 1941, part 2 | as above, key LSD | as above |
+
+| Substitution | Reading | Attested in |
+|---|---|---|
+| AE | ä | VORWAERTS |
+| OE | ö | ROEMXEINS |
+| Q | CH | BEOBAQTET |
+| SZ | ß | FLIEGERSTRASZE |
+| UE | ü | ANFANGSUEDAUSGANG |
+| X | separator | AUFKLXABTEILUNG |
 
 ## Vectors
 
