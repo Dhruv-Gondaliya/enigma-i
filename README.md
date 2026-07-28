@@ -16,7 +16,7 @@ npm test
   pass  keyboard                  111 cases
   pass  lampboard                 702 cases
   pass  battery                   131 cases
-  pass  stepping mechanism     1,072,795 cases
+  pass  stepping mechanism  1,072,795 cases
   pass  instruction plate          54 cases
   pass  assembled machine     462,694 cases
 
