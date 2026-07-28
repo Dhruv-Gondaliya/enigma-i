@@ -280,6 +280,31 @@ export const verify = () => {
       }
     }
   }
+  const designationList = Object.keys(ROTORS);
+  for (const left of designationList) {
+    for (const middle of designationList) {
+      for (const right of designationList) {
+        if (new Set([left, middle, right]).size !== 3) continue;
+        const trial = assemble({ wheelOrder: [left, middle, right] });
+        for (const l of ALPHABET) {
+          for (const m of ALPHABET) {
+            for (const r of ALPHABET) {
+              trial.setPositions(`${l}${m}${r}`);
+              const rightAtTurnover = r === ROTORS[right].turnover;
+              const middleAtTurnover = m === ROTORS[middle].turnover;
+              const expected =
+                ALPHABET[(ALPHABET.indexOf(l) + (middleAtTurnover ? 1 : 0)) % 26] +
+                ALPHABET[(ALPHABET.indexOf(m) + (middleAtTurnover || rightAtTurnover ? 1 : 0)) % 26] +
+                ALPHABET[(ALPHABET.indexOf(r) + 1) % 26];
+              trial.pressKey('A');
+              stepping(trial.windows === expected);
+            }
+          }
+        }
+      }
+    }
+  }
+  
   for (const designation of Object.keys(ROTORS)) {
     const others = Object.keys(ROTORS).filter((candidate) => candidate !== designation);
     const inert = assemble({
