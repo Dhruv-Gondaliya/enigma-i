@@ -16,11 +16,11 @@ npm test
   pass  keyboard                  111 cases
   pass  lampboard                 702 cases
   pass  battery                   131 cases
-  pass  stepping mechanism     18,235 cases
+  pass  stepping mechanism     1,072,795 cases
   pass  instruction plate          54 cases
   pass  assembled machine     462,694 cases
 
-  10 parts, 580,472 cases, 0 failed
+  10 parts, 1,635,032 cases, 0 failed
 ```
 
 ## Configuration
@@ -74,7 +74,7 @@ Those are the Operation Barbarossa settings of 7 July 1941; the first ciphertext
 src/wiring.js     transcribed constants, each carrying its source
 src/machine.js    Rotor, Reflector, EntryWheel, Plugboard, Keyboard,
                   Lampboard, Battery, Pawl, Stepping, EnigmaI
-test/verify.js    580,472 cases across 10 parts; verify() is pure,
+test/verify.js    1,635,032 cases across 10 parts; verify() is pure,
                   report() is the only host-dependent function
 SOURCES.md        hierarchy, configuration, unverified items, deviations
 ```
